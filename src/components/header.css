@@ -1,0 +1,75 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background-color: black;
+  height: 9%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.leftColmn > h1 {
+  padding-left: 20px;
+  color: aliceblue;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.leftColmn > h1:hover {
+  text-shadow: 2px 1px 5px white;
+}
+span {
+  color: yellow;
+}
+.SerachSec {
+  width: 25%;
+  height: 100%;
+}
+.SerachSec > form {
+  height: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.SerachSec > form > input {
+  width: 90%;
+  height: 50%;
+}
+.SerachSec > form > button {
+  width: 10%;
+  background-image: url("../assests/images/search2.ico");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  height: 35%;
+  border: none;
+  cursor: pointer;
+}
+.profileSec {
+  width: 20%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-evenly;
+  transition: all 0.5s;
+}
+.login {
+  width: 40%;
+  border: 1px solid;
+  text-align: center;
+  height: 80%;
+  align-content: center;
+}
+.login:hover {
+  cursor: pointer;
+
+  box-shadow: 0 0 5px #1f51ff;
+  background-color: white;
+  color: black;
+}
+
+.cart {
+  cursor: pointer;
+}

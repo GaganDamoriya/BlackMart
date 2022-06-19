@@ -1,0 +1,39 @@
+.dashBoard {
+  margin-top: 0;
+}
+.category {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+  font-size: 1.3rem;
+  background-color: black;
+  color: aliceblue;
+  position: sticky;
+  top: 9%;
+  z-index: 1;
+}
+.category > h3 {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.category > h3:hover {
+  color: black;
+  background-color: white;
+}
+.categoryName > h1 {
+  text-decoration: underline;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 15px;
+
+  font-size: 2em;
+}
+.categoryData > h1 {
+  text-transform: capitalize;
+  font-size: 2em;
+  padding: 10px;
+  text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+footer {
+  background-color: black;
+  justify-content: space-between;
+  display: flex;
+}
+.Follow {
+  width: 50%;
+  padding-left: 5%;
+}
+.contact {
+  width: 50%;
+}
+
+.Follow > h1 {
+  color: aliceblue;
+}
+.contact > h2,
+.contact > p {
+  color: aliceblue;
+}
+.social_icons {
+  width: 5%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+
+  display: flex;
+}
+.social_icons > img {
+  background-color: white;
+  padding-left: 10px;
+}
