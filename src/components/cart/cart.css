@@ -1,0 +1,22 @@
+.shoppingCart {
+  margin: 10px 0px 50px 10px;
+}
+.cartProduct {
+  display: grid;
+  grid-template-columns: 35% 25% 25%;
+  border-top: 1px solid rgb(150, 148, 148);
+}
+.cartProductDes {
+  margin: 0px 50px 0px 50px;
+}
+.itemimage {
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50%;
+}
+.titleCart {
+  font-weight: 2em;
+  padding-bottom: 5%;
+}

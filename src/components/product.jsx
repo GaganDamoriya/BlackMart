@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./product.css";
+import { useDispatch } from "react-redux";
+import { setItems } from "./redux/dispatcher";
+
 const Product = () => {
+  const dispatch = useDispatch();
   let { productID } = useParams();
   const [isLoading, setLoading] = useState(true);
   const [isError, setError] = useState(false);
@@ -68,7 +72,12 @@ const Product = () => {
             </div>
             <div className="buying">
               <div>
-                <button className="addtocart">Add to cart</button>
+                <button
+                  className="addtocart"
+                  onClick={() => dispatch(setItems(product.id))}
+                >
+                  Add to cart
+                </button>
               </div>
               <div>
                 <button className="buynow">Buy now</button>

@@ -4,13 +4,20 @@ export const Dispatcher = createSlice({
   name: "counter",
   initialState: {
     category: [],
+    items: {},
   },
-  reducer: {
+  reducers: {
     setCategories: (state, action) => {
       state.value += action.payload;
     },
+    setItems: (state, action) => {
+      state.items[action.payload] =
+        state.items[action.payload] === undefined
+          ? 1
+          : state.items[action.payload] + 1;
+    },
   },
 });
-export const { setCategories } = counterSlice.actions;
+export const { setCategories, setItems } = Dispatcher.actions;
 
-export default counterSlice.setCategories;
+export default Dispatcher.reducer;

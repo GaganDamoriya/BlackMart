@@ -21,7 +21,9 @@ const Header = () => {
         </div>
 
         <div className="profileSec">
-          <div className="cart">Cart</div>
+          <div className="cart" onClick={() => navigate("/cart")}>
+            Cart
+          </div>
           <div className="login">login/Sign up</div>
         </div>
       </header>
